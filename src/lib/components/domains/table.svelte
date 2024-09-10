@@ -32,11 +32,11 @@
 		}
 	];
 
-	let openRow;
-	let details;
-	let doubleClickModal = false;
+	let openRow: null | number = $state(null);
+	let details: (typeof items)[0] | null = $state(null);
+	let doubleClickModal = $state(false);
 
-	const toggleRow = (i) => {
+	const toggleRow = (i: number) => {
 		openRow = openRow === i ? null : i;
 	};
 </script>

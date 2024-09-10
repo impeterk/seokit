@@ -19,7 +19,7 @@
 </script>
 
 <Sidebar
-	class="sticky inset-0 top-[73px] z-30 hidden h-full w-64 flex-none border-e border-gray-200 dark:border-gray-600 lg:block lg:h-[calc(100vh-4rem-10px)] lg:overflow-y-visible"
+	class="sticky inset-0 top-[68.55px] z-30 hidden h-full w-64 flex-none border-e border-gray-500 dark:border-gray-600 lg:block lg:h-[calc(100vh-68.55px)] lg:overflow-y-visible"
 	{activeUrl}
 >
 	<SidebarWrapper class="flex h-full flex-col justify-between">
