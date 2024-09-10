@@ -4,6 +4,7 @@
 
 	import { pb } from '$lib/utils/pocketbase.svelte';
 	import { goto } from '$app/navigation';
+	import HeroImg from '$lib/assets/hero.webp?enhanced';
 
 	let form = $state({ email: '', password: '' });
 	async function handleLogin() {
@@ -13,7 +14,7 @@
 </script>
 
 <section class="grid grid-flow-row lg:grid-flow-col lg:grid-cols-2">
-	<img src="hero.webp" alt="hero" class="h-full w-full object-cover object-[65%]" />
+	<enhanced:img src={HeroImg} alt="hero" class="h-full w-full object-cover object-[65%]" />
 	<div class="flex flex-col items-center justify-center gap-8">
 		<div class="text-balance text-center">
 			<Heading tag="h2">SEO kit</Heading>
